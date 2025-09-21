@@ -16,6 +16,10 @@ int main() {
   
   // using namespace를 사용하면 특정 namespace안 요소들을 접두사 없이 쓸 수 있다.
   // 하지만 std안에는 많은 함수, 클래스, 변수 이름이 있기 때문에, 충돌 문제 발생 가능. 
+  
+  // 예를 들어 내가 using namespace std; 하고, int endl = 5; 라고 한 후, 
+  // std << "hello" << endl 하면 endl이 변수로 인식되어 오류가 생긴다
+  
   // 그래서 필요한 경우에만 아래처럼 쓸 수 있다.
   // using std::string;
   // using std::cout;
